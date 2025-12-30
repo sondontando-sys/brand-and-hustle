@@ -1,0 +1,16 @@
+Backend
+
+This folder contains the API and business logic built with Node.js and NestJS.
+
+Modules to include:
+- Auth & user management
+- Branding AI endpoints
+- Skill Builder content API
+- Marketplace transactions
+- Radio Hub publishing
+
+Tech notes:
+- Framework: NestJS
+- Database: PostgreSQL
+- Hosting: AWS or GCP
+`
