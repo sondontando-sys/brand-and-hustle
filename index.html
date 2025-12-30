@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>BRAND&HUSTLE</title>
+  <style>
+    :root {
+      --bg: #0b0f14;
+      --text: #eaeaf0;
+      --muted: #b6b6c3;
+      --accent: #2ad3c9;    /* turquoise */
+      --rose: #e4a7a0;      /* rose gold accent */
+      --card: #121722;
+      --border: #1f2735;
+    }
+    * { box-sizing: border-box; }
+    html, body {
+      margin: 0; padding: 0; background: var(--bg); color: var(--text);
+      font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+    }
+    .container { max-width: 980px; margin: 0 auto; padding: 24px; }
+    header { text-align: center; padding: 28px 12px 8px; }
+    .logo-wrap {
+      display: flex; align-items: center; justify-content: center; gap: 16px; margin-bottom: 12px;
+    }
+    .logo {
+      width: 84px; height: 84px; border-radius: 12px; border: 1px solid var(--border);
+      background: radial-gradient(120px 80px at 50% 50%, rgba(42,211,201,0.22), transparent 60%),
+                  linear-gradient(180deg, #111625, #0c111a);
+      display: grid; place-items: center; overflow: hidden;
+    }
+    .logo img { width: 100%; height: 100%; object-fit: cover; border-radius: 12px; }
+    .brand {
+      font-size: 1.25rem; font-weight: 700; letter-spacing: 0.02em;
+      background: linear-gradient(90deg, var(--text), var(--accent)); -webkit-background-clip: text; color: transparent;
+    }
+    .tagline { color: var(--muted); font-size: 0.95rem; }
+    .card {
+      background: linear-gradient(180deg, var(--card), #0d1320);
+      border: 1px solid var(--border); border-radius: 16px; padding: 20px; margin: 18px 0;
+      box-shadow: 0 12px 30px rgba(0,0,0,0.25);
+    }
+    .mission { font-size: 1.05rem; line-height: 1.6; }
+    .features { display: grid; gap: 12px; margin-top: 10px; }
+    .feature {
+      background: rgba(31,39,53,0.55); border: 1px solid var(--border);
+      border-radius: 12px; padding: 14px;
+    }
+    .feature b { color: var(--accent); }
+    .accent-line {
+      height: 3px; width: 100%; border-radius: 2px;
+      background: linear-gradient(90deg, var(--accent), var(--rose));
+      opacity: 0.8; margin: 12px 0 4px;
+    }
+    footer {
+      margin-top: 24px; text-align: center; color: var(--muted); font-size: 0.9rem;
+      padding: 24px 12px 36px; border-top: 1px solid var(--border);
+    }
+    .launch {
+      font-weight: 600; color: var(--rose);
+    }
+    .pill {
+      display: inline-block; padding: 8px 14px; border: 1px solid var(--border);
+      border-radius: 999px; background: rgba(31,39,53,0.5); color: var(--text); font-size: 0.9rem;
+      margin-top: 14px;
+    }
+    /* responsive */
+    @media (min-width: 680px) {
+      .logo-wrap { gap: 20px; }
+      .brand { font-size: 1.5rem; }
+      .mission { font-size: 1.1rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo-wrap">
+        <div class="logo">
+          <!-- If no PNG yet, this fallback shows a subtle mark -->
+          <img src="assets/logo.png" alt="BRAND&HUSTLE Logo" onerror="this.style.display='none'">
+        </div>
+        <div class="brand">BRAND&HUSTLE</div>
+      </div>
+      <div class="tagline">AI-powered branding + hustle tools for youth and small businesses</div>
+    </header>
+
+    <main>
+      <div class="card">
+        <div class="accent-line"></div>
+        <p class="mission"><strong>Mission:</strong> Empowering African youth and small businesses with AI-powered branding, skills, and income tools.</p>
+      </div>
+
+      <div class="card">
+        <h2 style="margin:0 0 8px 0; font-size:1.1rem;">Features</h2>
+        <div class="features">
+          <div class="feature"><b>AI Branding Studio:</b> Logo, story, social posts</div>
+          <div class="feature"><b>Skill Builder:</b> Micro-courses on AI, IT, and sales</div>
+          <div class="feature"><b>Marketplace:</b> Freelance gigs and client connections</div>
+          <div class="feature"><b>Radio Hub:</b> Publish audio segments and build community</div>
+          <div class="feature"><b>Monetization Engine:</b> Subscriptions, payouts, affiliate rewards</div>
+        </div>
+      </div>
+
+      <div style="text-align:center;">
+        <span class="pill">Built for mobile-first creators</span>
+      </div>
+    </main>
+
+    <footer>
+      <div class="launch">Launching 26 January 2026 — Numerology 8 Day, Aquarius Season</div>
+      <div style="margin-top:6px;">© BRAND&HUSTLE. All rights reserved.</div>
+    </footer>
+  </div>
+</body>
+  </html>
